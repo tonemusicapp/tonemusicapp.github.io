@@ -98,7 +98,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ffffff;
+		background: #FFF0DC;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -115,7 +115,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		color: #000000;
+		color: #999999;
 	}
 
 	html, input, select, textarea {
@@ -325,7 +325,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #000000;
+		color: #828282;
 	}
 
 	blockquote {
@@ -2719,7 +2719,13 @@ input, select, textarea {
 		text-align: center;
 	}
 
-
+		header.major:after {
+			content: '';
+			border-bottom: solid 2px #e6e6e6;
+			display: block;
+			width: 4em;
+			margin: 2em auto 0 auto;
+		}
 
 		@media screen and (max-width: 736px) {
 
@@ -2910,14 +2916,11 @@ input, select, textarea {
 
 /* Wrapper */
 
-.wrapper {
-	margin-left: auto;
-	margin-right: auto;
-	width: 50em;
-	padding: 4.5em 0 2.5em 0 ;
-	background-color: #FFF0DC;
-	border-bottom: solid 2px #000000;
-}
+	.wrapper {
+		padding: 4.5em 0 2.5em 0 ;
+		background-color: #fcf3e7;
+		border-bottom: solid 2px #eeeeee;
+	}
 
 		.wrapper > .inner {
 			margin-left: auto;
@@ -2926,7 +2929,7 @@ input, select, textarea {
 		}
 
 			.wrapper > .inner.alt > * {
-				border-top: solid 2px #000000;
+				border-top: solid 2px #eeeeee;
 				margin-bottom: 0;
 				margin-top: 3em;
 				padding-top: 3em;
@@ -3331,7 +3334,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style2 h1, .wrapper.style2 h2, .wrapper.style2 h3, .wrapper.style2 h4, .wrapper.style2 h5, .wrapper.style2 h6 {
-				color: #000000;
+				color: #828282;
 			}
 
 			.wrapper.style2 blockquote {
@@ -3608,8 +3611,8 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		background-color: #eed2b4;
-		color: #000000;
+		background-color: #a2501d;
+		color: #ffffff;
 		padding: 4.5em 0 2.5em 0 ;
 		-moz-align-items: center;
 		-webkit-align-items: center;
@@ -3636,9 +3639,9 @@ input, select, textarea {
 		#header input[type="button"],
 		#header button,
 		#header .button {
-			background-color: #FFF0DC;
-			color: #000000 !important;
-			box-shadow: inset 0 0 0 2px rgb(0, 0, 0);
+			background-color: transparent;
+			color: #ffffff !important;
+			box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
 		}
 
 			#header input[type="submit"]:hover,
@@ -3663,8 +3666,8 @@ input, select, textarea {
 			#header button.primary,
 			#header .button.primary {
 				box-shadow: none;
-				background-color: #eed2b4;
-				color: #000000 !important;
+				background-color: #ffffff;
+				color: #4696e5 !important;
 			}
 
 		#header label {
@@ -3751,15 +3754,15 @@ input, select, textarea {
 			}
 
 				#header .image.phone .inner, #header .image.phone:before, #header .image.phone:after {
-					border-color: rgb(0, 0, 0);
+					border-color: rgba(255, 255, 255, 0.25);
 				}
 
 				#header .image.phone .inner:before {
-					background: rgb(0, 0, 0);
+					background: rgba(255, 255, 255, 0.25);
 				}
 
 				#header .image.phone .inner:after {
-					border-color: rgb(0, 0, 0);
+					border-color: rgba(255, 255, 255, 0.25);
 				}
 
 		#header ul.alt > li {
@@ -3797,7 +3800,7 @@ input, select, textarea {
 		#header a {
 			color: inherit;
 			border-bottom-color: rgba(255, 255, 255, 0.5);
-			color: #000000;
+			color: #ffffff;
 		}
 
 		#header strong, #header b {
@@ -4069,69 +4072,78 @@ input, select, textarea {
 
 		}
 
-
-/* Ensure the background color matches the footer */
-html, body {
-    background-color: #FFF0DC; /* Same color as the footer */
-    margin: 0; /* Remove default margins */
-    padding: 0; /* Remove default padding */
-    height: 100%; /* Ensure the body and html span the full height of the viewport */
-}
-
-
-/* Main content container (everything except the footer) */
-#main {
-    flex: 1; /* Fills the remaining space between the header and footer */
-}
-
 /* Footer */
-#footer {
-    background-color: #FFF0DC;
-    color: #000000;
-    padding: 1.5em 0; /* Adjusted padding to make the footer compact */
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Aligns items horizontally in the center */
-    justify-content: flex-start; /* Aligns items at the top of the footer */
-}
 
-/* Icons in the footer */
-#footer .icons {
-    margin-bottom: 0.5em; /* Space below the icons (email envelope) */
-}
+	#footer {
+		background-color: #FFF0DC;
+		color: #999999;
+		padding: 4.5em 0 2.5em 0 ;
+		color: #b0b0b0;
+		text-align: center;
+	}
 
-/* Footer copyright text */
-#footer .copyright {
-    font-size: 0.8em;
-    margin-top: 0.5em; /* Adds a small gap above the copyright text */
-}
+		#footer input, #footer select, #footer textarea {
+			color: #999999;
+		}
 
-/* Other footer styles */
-#footer a {
-    color: inherit;
-    border-bottom-color: #c6c6c6;
-}
+		#footer a {
+			color: inherit;
+			border-bottom-color: #c6c6c6;
+		}
 
-#footer a:hover {
-    color: #4696e5;
-}
+			#footer a:hover {
+				color: #4696e5;
+			}
 
-/* Media Queries */
-@media screen and (max-width: 980px) {
-    #footer {
-        padding: 4em 4em 2em 4em;
-    }
-}
+		#footer strong, #footer b {
+			color: #828282;
+		}
 
-@media screen and (max-width: 736px) and (orientation: landscape) {
-    #footer {
-        padding: 3em 3em 1em 3em;
-    }
-}
+		#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
+			color: #828282;
+		}
 
-@media screen and (max-width: 736px) and (orientation: portrait) {
-    #footer {
-        padding: 3em 1.5em 1em 1.5em;
-    }
-}
+		#footer blockquote {
+			border-left-color: #d6d6d6;
+		}
+
+		#footer code {
+			background: rgba(144, 144, 144, 0.075);
+			border-color: #d6d6d6;
+		}
+
+		#footer hr {
+			border-bottom-color: #d6d6d6;
+		}
+
+		#footer a {
+			color: inherit;
+		}
+
+		#footer .copyright {
+			font-size: 0.8em;
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#footer {
+				padding: 4em 4em 2em 4em ;
+			}
+
+		}
+
+	@media screen and (max-width: 736px) and (orientation: landscape) {
+
+		#footer {
+			padding: 3em 3em 1em 3em ;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) and (orientation: portrait) {
+
+		#footer {
+			padding: 3em 1.5em 1em 1.5em ;
+		}
+
+	}
