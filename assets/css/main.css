@@ -2935,7 +2935,7 @@ input, select, textarea {
 	.wrapper {
 		padding: 4.5em 0 2.5em 0 ;
 		background-color: #fcf3e7;
-		border-bottom: solid 2px #eeeeee;
+		/*border-bottom: solid 2px #eeeeee;*/
 	}
 
 		.wrapper > .inner {
