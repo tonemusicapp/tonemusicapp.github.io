@@ -115,7 +115,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		color: #999999;
+		color: #00000080;
 	}
 
 	html, input, select, textarea {
@@ -325,7 +325,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #828282;
+		color: #00000080;
 	}
 
 	blockquote {
@@ -2719,6 +2719,14 @@ input, select, textarea {
 		text-align: center;
 	}
 
+
+
+
+
+
+
+
+/* small bar under first segment
 		header.major:after {
 			content: '';
 			border-bottom: solid 2px #e6e6e6;
@@ -2726,6 +2734,14 @@ input, select, textarea {
 			width: 4em;
 			margin: 2em auto 0 auto;
 		}
+*/
+
+
+
+
+
+
+
 
 		@media screen and (max-width: 736px) {
 
@@ -3611,8 +3627,8 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		background-color: #a2501d;
-		color: #ffffff;
+		background-color: #FFF0DC;
+		color: #00000080;
 		padding: 4.5em 0 2.5em 0 ;
 		-moz-align-items: center;
 		-webkit-align-items: center;
@@ -3640,8 +3656,8 @@ input, select, textarea {
 		#header button,
 		#header .button {
 			background-color: transparent;
-			color: #ffffff !important;
-			box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
+			color: #00000080 !important;
+			box-shadow: inset 0 0 0 2px #00000080;
 		}
 
 			#header input[type="submit"]:hover,
@@ -3754,15 +3770,15 @@ input, select, textarea {
 			}
 
 				#header .image.phone .inner, #header .image.phone:before, #header .image.phone:after {
-					border-color: rgba(255, 255, 255, 0.25);
+					border-color: #00000080;
 				}
 
 				#header .image.phone .inner:before {
-					background: rgba(255, 255, 255, 0.25);
+					background: #00000080;
 				}
 
 				#header .image.phone .inner:after {
-					border-color: rgba(255, 255, 255, 0.25);
+					border-color: #00000080;
 				}
 
 		#header ul.alt > li {
@@ -3800,7 +3816,7 @@ input, select, textarea {
 		#header a {
 			color: inherit;
 			border-bottom-color: rgba(255, 255, 255, 0.5);
-			color: #ffffff;
+			color: #00000080;
 		}
 
 		#header strong, #header b {
@@ -4117,7 +4133,7 @@ input, select, textarea {
 		}
 
 		#footer a {
-			color: inherit;
+			color: #00000080;
 		}
 
 		#footer .copyright {
