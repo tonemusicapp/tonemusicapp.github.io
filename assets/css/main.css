@@ -2334,12 +2334,12 @@ input, select, textarea {
 				position: relative;
 				width: 100%;
 			}
-
+/*
 			.image.phone .inner, .image.phone:before, .image.phone:after {
 				display: block;
 				border: solid 2px rgba(255, 255, 255, 0.25);
 			}
-
+*/
 			.image.phone .inner {
 				position: relative;
 			}
@@ -2600,7 +2600,7 @@ input, select, textarea {
 			}
 
 			ul.icons li .icon:before {
-				font-size: 1.75rem;
+				font-size: 2.5rem;
 			}
 
 		ul.icons.major li {
@@ -2774,6 +2774,9 @@ input, select, textarea {
 			border-radius: 100%;
 			margin: 0 3em 0 0;
 			display: block;
+			border: none !important;
+    		outline: none !important;
+    		box-shadow: none !important;
 		}
 
 			.spotlight .image img {
@@ -2933,9 +2936,9 @@ input, select, textarea {
 /* Wrapper */
 
 	.wrapper {
-		padding: 4.5em 0 2.5em 0 ;
-		background-color: #fcf3e7;
-		/*border-bottom: solid 2px #eeeeee;*/
+		padding: 6em 0 6em 0 ;
+		background-color: #ffffff;
+		border-bottom: solid 2px #eeeeee;
 	}
 
 		.wrapper > .inner {
@@ -3627,8 +3630,8 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		background-color: #FFF0DC;
-		color: #00000080;
+		background-color: #DB7075;
+		color: #ffffff;
 		padding: 4.5em 0 2.5em 0 ;
 		-moz-align-items: center;
 		-webkit-align-items: center;
@@ -3642,7 +3645,7 @@ input, select, textarea {
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		background-image: url("images/overlay.png"), url("images/pattern-size1.svg");
+/*		background-image: url("images/overlay.png"), url("images/pattern-size1.svg");*/
 		background-position: top left, center center;
 		background-attachment: fixed, fixed;
 		background-size: auto, cover;
@@ -3656,8 +3659,8 @@ input, select, textarea {
 		#header button,
 		#header .button {
 			background-color: transparent;
-			color: #00000080 !important;
-			box-shadow: inset 0 0 0 2px #00000080;
+			color: #ffffff !important;
+			box-shadow: inset 0 0 0 2px #ffffff;
 		}
 
 			#header input[type="submit"]:hover,
@@ -3816,7 +3819,7 @@ input, select, textarea {
 		#header a {
 			color: inherit;
 			border-bottom-color: rgba(255, 255, 255, 0.5);
-			color: #00000080;
+			color: #ffffff;
 		}
 
 		#header strong, #header b {
@@ -3905,10 +3908,11 @@ input, select, textarea {
 			}
 
 		@media screen and (max-width: 1280px) {
-
+/*
 			#header {
 				background-image: url("images/overlay.png"), url("images/pattern-size2.svg");
 			}
+*/
 
 		}
 
@@ -3956,11 +3960,11 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
-
+/*
 			#header {
 				background-image: url("images/overlay.png"), url("images/pattern-size3.svg");
 			}
-
+*/
 				#header h1 {
 					font-size: 2em;
 				}
@@ -4091,10 +4095,10 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background-color: #FFF0DC;
+		background-color: #DB7075;
 		color: #999999;
 		padding: 4.5em 0 2.5em 0 ;
-		color: #b0b0b0;
+		color: #ffffff;
 		text-align: center;
 	}
 
@@ -4116,7 +4120,7 @@ input, select, textarea {
 		}
 
 		#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
-			color: #828282;
+			color: #ffffff;
 		}
 
 		#footer blockquote {
@@ -4133,7 +4137,7 @@ input, select, textarea {
 		}
 
 		#footer a {
-			color: #00000080;
+			color: #ffffff;
 		}
 
 		#footer .copyright {
